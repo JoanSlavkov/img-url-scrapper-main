@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Buttons</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Image URL Scrapper</h1>
+
+   
+    <a href="https://joanslavkov.github.io/Glovo-url-extraction/" class="url-button" id="button1">Glovo</a>
+    <a href="https://joanslavkov.github.io/wolt-url-fv/" class="url-button" id="button2">Wolt</a>
+
+    <script>
+        // Make buttons open the URLs from input fields
+        const button1 = document.getElementById('button1');
+        const button2 = document.getElementById('button2');
+        const url1 = document.getElementById('url1');
+        const url2 = document.getElementById('url2');
+
+        button1.addEventListener('click', () => {
+            if(url1.value) window.open(url1.value, '_blank');
+        });
+
+        button2.addEventListener('click', () => {
+            if(url2.value) window.open(url2.value, '_blank');
+        });
+    </script>
+
+</body>
+</html>
